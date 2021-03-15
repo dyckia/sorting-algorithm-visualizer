@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SortingAlgorithmsDemystiﬁed:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SortingAlgorithmsDemystied_jar</output-path>
+    <root id="archive" name="SortingAlgorithmsDemystiﬁed.jar">
+      <element id="module-output" name="SortingAlgorithmsDemystiﬁed" />
+    </root>
+  </artifact>
+</component>

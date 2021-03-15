@@ -26,12 +26,12 @@ public class SortingVisualizer {
 
     // left column: control panel
     JPanel controlPanel = new JPanel();
-    JButton sortButton = new JButton("Start Sort");
+    JButton sortButton = new JButton("Start Sorting");
     JButton shuffleButton = new JButton("Shuffle Array");
     // algorithm selection dropdown menu
     JLabel algoLabel = new JLabel("Algorithm");
     private int algoIndex = 0;
-    private String[] algorithms = {"Bubble Sort", "Insertion Sort",
+    private final String[] algorithms = {"Bubble Sort", "Insertion Sort",
                                    "Merge Sort", "Heap Sort", "Quick Sort"};
     JComboBox algoComboBox = new JComboBox(algorithms);
     // speed slider
@@ -44,16 +44,16 @@ public class SortingVisualizer {
     JLabel sizeValueLabel = new JLabel(arraySize + " ");
     JSlider sizeSlider = new JSlider(JSlider.HORIZONTAL, 10, 200, arraySize);
     // algorithm analysis text
-    private String[] analysisText = {"Bubble Sort\n\nBest Case: O(n^2)\nWorst Case: O(n^2)\nAverage: O(n^2)",
-                                     "Insertion Sort\n\nBest Case: O(n)\nWorst Case: O(n^2)\nAverage: O(n^2)",
-                                     "Merge Sort\n\n",
-                                     "Heap Sort\n\n",
-                                     "Quick Sort\n\n"};
+    private final String[] analysisText = {"Bubble Sort\n\nTime\nAverage: n^2\nBest Case: n\nWorst Case: n^2\n\nSpace: 1\n\nStable: Yes",
+                                     "Insertion Sort\n\nTime\nAverage: n^2\nBest Case: n\nWorst Case: n^2\n\nSpace: 1\n\nStable: Yes",
+                                     "Merge Sort\n\nTime\nAverage: nlogn\nBest Case: nlogn\nWorst Case: nlogn\n\nSpace: n\n\nStable: Yes",
+                                     "Heap Sort\n\nTime\nAverage: nlogn\nBest Case: nlogn\nWorst Case: nlogn\n\nSpace: 1\n\nStable: No",
+                                     "Quick Sort\n\nTime\nAverage: nlogn\nBest Case: nlogn\nWorst Case: n^2\n\nSpace: logn\n\nStable: No"};
     JTextArea analysisTextArea = new JTextArea(analysisText[algoIndex]);
     String creditText = "Built by Jason Feng.";
     JLabel creditLabel = new JLabel(creditText);
     // border style
-    Border loweredetched = BorderFactory.createEtchedBorder(EtchedBorder.LOWERED);
+    Border border = BorderFactory.createEtchedBorder(EtchedBorder.LOWERED);
 
 
     public static void main(String[] args) {
@@ -112,7 +112,7 @@ public class SortingVisualizer {
 
     private void initControlPanel() {
         // initialize the control panel
-        controlPanel.setBorder(BorderFactory.createTitledBorder(loweredetched,"Controls"));
+        controlPanel.setBorder(BorderFactory.createTitledBorder(border,"Controls"));
         controlPanel.setLayout(null);
         controlPanel.setBounds(10, 10, 210, 600);
         int yValue = 40;
@@ -267,7 +267,7 @@ public class SortingVisualizer {
             // cast g to Graphics2D to allow float height
             Graphics2D g2d = (Graphics2D) g;
             Rectangle2D.Float bar;
-            Float barWidth = (float) CANVAS_WIDTH / arraySize;
+            float barWidth = (float) CANVAS_WIDTH / arraySize;
             for (int i = 0; i < arraySize; i++) {
                 float barHeight = array[i];
                 // fill bar
