@@ -158,9 +158,12 @@ public class SortingVisualizer {
         algoComboBox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                shuffleArray();
-                canvas.resetPointers();
-                canvas.repaint();
+                // prevent algorithm selection from re-shuffling array while sorting
+                if (!canvas.isSorting) {
+                    shuffleArray();
+                    canvas.resetPointers();
+                    canvas.repaint();
+                }
                 algoIndex = algoComboBox.getSelectedIndex();
                 analysisTextArea.setText(analysisText[algoIndex]);
             }
