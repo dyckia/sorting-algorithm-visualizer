@@ -1,18 +1,17 @@
 # Sorting Algorithms Demystiﬁed
 
-![](assets/screen-shot1.png)
+![](assets/screen-shot1.gif)
 
-
+Visualize and compare different sorting algorithms in real time!
 
 ## Try the application
 
-Download the application [here](https://github.com/dyckia/sorting-algorithms-demystified/tree/master/out/artifacts/SortingAlgorithmsDemystied_jar).
+Download the lastest build [here](https://github.com/dyckia/sorting-algorithms-demystified/tree/master/out/artifacts/SortingAlgorithmsDemystied_jar).
 
 ## Features
 
 1. Interactive and intuitive interface. 
-
-2. Select from five most popular sorting algorithms. 
+2.  Wide selection of sorting algorithms. 
 
    - Bubble Sort
    - Selection Sort
@@ -20,10 +19,7 @@ Download the application [here](https://github.com/dyckia/sorting-algorithms-dem
    - Heap Sort
 
    - Quick Sort
-
-3. Adjust sorting speed while sorting in action.
-
-3. Change the array size
-
-![](assets/screen-shot2.png)
+3. On the fly sorting speed adjustment. 
+3. Fully adjustable array size.
+5. Time & space complexity analysis.
 
