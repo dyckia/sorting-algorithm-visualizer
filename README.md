@@ -6,7 +6,7 @@ This is a remake of the Flappy Bird game using Java and swing.
 
 ## Try the application
 
-Download the application [here](https://github.com/dyckia/flappy-bird-java/tree/master/out/artifacts/flappyBird_jar).
+Download the application [here](https://github.com/dyckia/sorting-algorithms-demystified/tree/master/out/artifacts/SortingAlgorithmsDemystied_jar).
 
 ## Features
 
