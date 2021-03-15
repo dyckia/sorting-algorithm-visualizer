@@ -2,7 +2,7 @@
 
 ![](assets/screen-shot1.png)
 
-This is a remake of the Flappy Bird game using Java and swing. 
+
 
 ## Try the application
 
