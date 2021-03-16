@@ -1,12 +1,14 @@
-# Sorting Algorithms Demystiﬁed
+# Sorting Algorithms Demystified
 
-![](assets/screen-shot1.gif)
+![](assets/screen-shot1.png)
 
 Visualize and compare different sorting algorithms in real time!
 
 ## Try the application
 
 Download the lastest build [here](https://github.com/dyckia/sorting-algorithms-demystified/tree/master/out/artifacts/SortingAlgorithmsDemystied_jar).
+
+![](assets/screen-shot2.gif)
 
 ## Features
 
